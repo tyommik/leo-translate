@@ -22,6 +22,13 @@ export const defaultValues = Object.freeze({
 
   // Play sound automatically for translated word
   audioAutoPlay:    false,
+
+  // Original language of the text to translate
+  sourceLang: 'en',
+
+  // Network settings
+  privateMode:      true
+
 });
 
 function getOptionValue (options, key) {
