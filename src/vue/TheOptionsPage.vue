@@ -131,16 +131,6 @@
         >
         <label for="audioAutoPlay">Play audio automatically.</label>
       </div>
-
-      <h3>Network</h3>
-      <div class="browser-style">
-        <input
-            id="privateMode"
-            v-model="options.privateMode"
-            type="checkbox"
-        >
-        <label for="privateMode">Enable Private Mode (do not send title and URL to LinguaLeo.com).</label>
-      </div>
     </form>
   </div>
 </template>

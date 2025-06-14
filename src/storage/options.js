@@ -28,6 +28,7 @@ export const defaultValues = Object.freeze({
 
   // Network settings
   privateMode:      true
+
 });
 
 function getOptionValue (options, key) {
