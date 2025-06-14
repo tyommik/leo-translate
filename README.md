@@ -1,6 +1,6 @@
 # LeoTranslate
 
-This is an add-on for the Firefox and Firefox for Android browsers that helps you translate words from English to Russian and let you add these words to the your dictionary.
+This is an add-on for the Firefox and Firefox for Android browsers that helps you translate words from your chosen language into Russian and lets you add these words to your dictionary. You can choose the source language (for example, English or Portuguese) in the settings.
  
 ## Installation
 [Get the Firefox Add-on from AMO gallery](https://addons.mozilla.org/en-US/firefox/addon/leo-translate/)

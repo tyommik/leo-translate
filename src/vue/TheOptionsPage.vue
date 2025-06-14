@@ -112,6 +112,16 @@
         </select>
       </label>
 
+      <h3>Translation</h3>
+      <label>
+        Source language<br>
+        <select class="browser-style" v-model="options.sourceLang">
+          <option value="en">English</option>
+          <option value="pt">Portuguese</option>
+          <option value="ru">Russian</option>
+        </select>
+      </label>
+
       <h3>Audio</h3>
       <div class="browser-style">
         <input
@@ -157,7 +167,8 @@
           theme:                null,
           audioAutoPlay:        null,
           contextAutoTranslate: null,
-          privateMode:          null
+          privateMode:          null,
+          sourceLang:          null
         },
       };
     },

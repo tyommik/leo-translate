@@ -30,6 +30,7 @@
       return {
         showTranslatedContext: false,
         translatedContext: '',
+        sourceLang: 'en'
       };
     },
 
@@ -39,6 +40,7 @@
         this.showTranslatedContext = false;
 
         options.getOption('contextAutoTranslate').then(val => val && this.toggleTranslatedContext());
+        options.getOption('sourceLang').then(lang => this.sourceLang = lang);
       }
     },
 
@@ -47,6 +49,8 @@
           vm => [vm.showTranslatedContext, vm.translatedContext].join(),
           val => this.$emit('resize')
       );
+
+      options.getOption('sourceLang').then(lang => this.sourceLang = lang);
     },
 
     methods: {
@@ -54,7 +58,7 @@
         if (! this.showTranslatedContext && this.translatedContext === '') {
           this.translatedContext = 'Loading...';
 
-          api.translateSentence(this.context, 'en', 'ru')
+          api.translateSentence(this.context, this.sourceLang, 'ru')
               .then(data => this.translatedContext = data.translation);
         }
 
